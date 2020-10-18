@@ -8,7 +8,7 @@ export default function Footer() {
           const { style, icon, name, url } = social;
           return (
             <li key={url}>
-              <a href={url} className={`icon ${style} ${icon}`}>
+              <a href={url} target="_blank" rel="noopener noreferrer" className={`icon ${style} ${icon}`}>
                 <span className="label">{name}</span>
               </a>
             </li>
@@ -16,10 +16,7 @@ export default function Footer() {
         })}
       </ul>
       <ul className="copyright">
-        <li>&copy; Spectral</li>
-        <li>
-          Design: <a href="http://html5up.net">HTML5 UP</a>
-        </li>
+        <li>&copy; Felix Jeckel</li>
       </ul>
     </footer>
   );
